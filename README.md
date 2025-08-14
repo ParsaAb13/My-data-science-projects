@@ -46,7 +46,6 @@ The goal is to explore the data, visualize patterns, preprocess features, and bu
    - Confusion Matrix
    - ROC Curve and AUC score
 
-
 ---
 
 ## 🧠 Model Performance (Test Set)

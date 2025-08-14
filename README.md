@@ -63,7 +63,7 @@ A machine learning project to classify breast cancer tumors as malignant or beni
 Dataset: Breast Cancer Wisconsin (Diagnostic) from UCI Repository.
 
 
-- [IMDB Review Analysis](IMDBReview/) — Sentiment analysis on IMDB movie reviews.
+
 ## **README — IMDBReview/**
 
 # 🎬 IMDB Review Sentiment Analysis
@@ -83,7 +83,7 @@ This project performs **sentiment analysis** on IMDB movie reviews to determine 
 4. Model evaluation.
 
 
-- [Student Performance Analysis](StudentPerformanceAnalysis/) — Predicting student scores.
+
 # 📚 Student Performance Analysis
 
 This project analyzes student performance in **Mathematics, Science, and Literature**. The dataset contains student scores and related factors.  

@@ -18,7 +18,6 @@ The goal is to explore the data, visualize patterns, preprocess features, and bu
   - `M` = Malignant (cancerous)  
   - `B` = Benign (non-cancerous)  
 - **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)
-
 ---
 
 ## 🔍 Project Workflow

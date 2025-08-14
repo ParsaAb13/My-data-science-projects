@@ -3,7 +3,6 @@
 A collection of my data science projects.
 
 ## Projects
-- [Breast Cancer Analysis](BreastCancer/) — Tumor classification using ML.
 - # Breast Cancer Project
 - # 🩺 Breast Cancer Data Science Project
 
@@ -68,14 +67,43 @@ The goal is to explore the data, visualize patterns, preprocess features, and bu
 
 *(Numbers are for example — update after running your notebook)*
 
----
-
-## 🚀 How to Run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/USERNAME/breast-cancer-analysis.git
-
 A machine learning project to classify breast cancer tumors as malignant or benign.
 Dataset: Breast Cancer Wisconsin (Diagnostic) from UCI Repository.
+
+
 - [IMDB Review Analysis](IMDBReview/) — Sentiment analysis on IMDB movie reviews.
+## **README — IMDBReview/**
+
+# 🎬 IMDB Review Sentiment Analysis
+
+This project performs **sentiment analysis** on IMDB movie reviews to determine whether a review is **positive** or **negative**.
+
+## 📊 Dataset
+- Contains movie reviews in English.
+- Target column (`sentiment`):
+  - `positive` → Positive review
+  - `negative` → Negative review
+
+## ⚙️ Steps
+1. Text preprocessing (removing punctuation, lowercasing, tokenization).
+2. Converting text into numerical features (TF-IDF or CountVectorizer).
+3. Training NLP models (e.g., Logistic Regression, Naive Bayes).
+4. Model evaluation.
+
+
 - [Student Performance Analysis](StudentPerformanceAnalysis/) — Predicting student scores.
+# 📚 Student Performance Analysis
+
+This project analyzes student performance in **Mathematics, Science, and Literature**. The dataset contains student scores and related factors.  
+*Note: The dataset contains text data in Persian.*
+
+## 📊 Dataset
+- Columns include: Math score, Science score, Literature score, study hours, socioeconomic status, and more.
+- Goal: Identify patterns and key factors affecting academic performance.
+
+## ⚙️ Steps
+1. Load and inspect the dataset.
+2. Handle missing values and clean the data.
+3. Perform statistical analysis and visualization.
+4. Build predictive models for student performance.
+

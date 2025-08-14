@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 df = pd.read_excel(r'f:\Student_Performance_Dataset.xlsx')
-print(df.head()) # اطمینان برای صحت وارد شدن دیتا 
-df['MeanScore'] = df[['Math', 'Science', 'Literature']].mean(axis=1)# محاسبه میانگین نمره دروس برای هر دانش‌آموز
+print(df.head())
+df['MeanScore'] = df[['Math', 'Science', 'Literature']].mean(axis=1)
 
-class Student: # بحث شی گرایی 
+class Student: 
        def __init__(self, name, gender, math, science, literature):
         self.name = name
         self.gender = gender
@@ -18,7 +18,7 @@ class Student: # بحث شی گرایی
  def calculate_mean(self):
      return (self.math + self.science + self.literature) / 3
     
-for index, row in df.iterrows():# بررسی جنسیت و طبقه‌بندی میانگین نمره با if / elif / else
+for index, row in df.iterrows():
     gender = row['Gender']
     mean_score = row['MeanScore']
     
@@ -33,24 +33,25 @@ for index, row in df.iterrows():# بررسی جنسیت و طبقه‌بندی �
 
     print(f"{row['Student']} ({gender}) - میانگین: {mean_score:.1f} → عملکرد: {level}")
 
-plt.figure(figsize=(6, 5)) # رسم نمودار ستونی میانگین نمرات بر اساس جنسیت 
+plt.figure(figsize=(6, 5))
 sns.barplot(data=df, x='Gender', y='MeanScore', ci=None, palette='pastel')
 plt.title('میانگین نمرات بر اساس جنسیت')
 plt.xlabel('جنسیت')
 plt.ylabel('میانگین نمره')
 plt.show()
 
-plt.figure(figsize=(6, 5)) #رسم نمودار هیستوگرام برای نمرات افسردگی 
+plt.figure(figsize=(6, 5))
 sns.histplot(data=df, x='DepressionScore', bins=10, kde=True, color='skyblue')
 plt.title('توزیع نمره افسردگی')
 plt.xlabel('نمره افسردگی')
 plt.ylabel('تعداد')
 plt.show()
 
-plt.figure(figsize=(6, 5)) #رسم نمودار scatter plot برای مصرف اینترنت و افسردگی 
+plt.figure(figsize=(6, 5))
 sns.scatterplot(data=df, x='InternetUsage', y='DepressionScore', hue='Gender', palette='Set2')
 plt.title('رابطه مصرف اینترنت و افسردگی')
 plt.xlabel('میزان مصرف اینترنت')
 plt.ylabel('نمره افسردگی')
 plt.legend(title='جنسیت')
 plt.show()
+

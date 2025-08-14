@@ -46,14 +46,6 @@ The goal is to explore the data, visualize patterns, preprocess features, and bu
    - Confusion Matrix
    - ROC Curve and AUC score
 
----
-
-## 📊 Example Visualizations
-### Correlation Heatmap
-![heatmap](images/heatmap.png)
-
-### Class Distribution
-![class_distribution](images/class_distribution.png)
 
 ---
 
